@@ -123,6 +123,7 @@ function Registration1() {
         if(isError){
             return;
         }else{
+            window.localStorage.setItem('user info',JSON.stringify(userDetails))
             navigate("/Info");
         }
     }
